@@ -5,8 +5,10 @@ import Product from "../components/Product";
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { listProducts } from "../actions/productActions";
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Paginate from '../components/Paginate'
+import ProductCarousel from '../components/ProductCarousel'
+import Meta from '../components/Meta'
 
 const HomeScreen = () => {
   let { keyword, pageNumber } = useParams();
@@ -23,6 +25,14 @@ const HomeScreen = () => {
 
   return (
     <>
+      <Meta />
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to='/' className='btn btn-light'>
+          Go Back
+        </Link>
+      )}
       <h1>Latest Products</h1>
       {loading ? (
          <Loader />
