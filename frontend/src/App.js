@@ -36,6 +36,7 @@ function App() {
             <Route path='/login' element={<LoginScreen />} />
             <Route path='/product/:id' element={<ProductScreen />} />
             <Route path='/cart/:productId' element={<CartScreen />} />
+            <Route path='/cart' element={<CartScreen />} />
             <Route path='/admin/userlist' element={<UserListScreen />} />
             <Route path='/admin/user/:id/edit' element={<UserEditScreen />} />
             <Route path='/admin/productlist' element={<ProductListScreen />} exact />
