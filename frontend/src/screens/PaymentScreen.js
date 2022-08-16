@@ -11,7 +11,7 @@ const PaymentScreen = () => {
   const { shippingAddress } = cart
   let history = useNavigate()
 
-  if (!shippingAddress) {
+  if (!shippingAddress.address) {
     history('/shipping')
   }
 
