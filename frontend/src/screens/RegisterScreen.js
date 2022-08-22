@@ -58,7 +58,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group controlId='email'>
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label style={{marginTop: "3%"}}>Email Address</Form.Label>
           <Form.Control
             type='email'
             placeholder='Enter email'
@@ -68,7 +68,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group controlId='password'>
-          <Form.Label>Password</Form.Label>
+          <Form.Label style={{marginTop: "3%"}}>Password</Form.Label>
           <Form.Control
             type='password'
             placeholder='Enter password'
@@ -78,7 +78,7 @@ const RegisterScreen = () => {
         </Form.Group>
 
         <Form.Group controlId='confirmPassword'>
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label style={{marginTop: "3%"}}>Confirm Password</Form.Label>
           <Form.Control
             type='password'
             placeholder='Confirm password'
@@ -87,7 +87,7 @@ const RegisterScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
+        <Button type='submit' variant='primary' style={{marginTop: "3%"}}>
           Register
         </Button>
       </Form>

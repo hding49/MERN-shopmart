@@ -50,7 +50,7 @@ const LoginScreen = () => {
         </Form.Group>
 
         <Form.Group controlId='password'>
-          <Form.Label>Password</Form.Label>
+          <Form.Label style={{marginTop: "3%"}}>Password</Form.Label>
           <Form.Control
             type='password'
             placeholder='Enter password'
@@ -59,7 +59,7 @@ const LoginScreen = () => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
+        <Button type='submit' variant='primary' style={{marginTop: "3%"}}>
           Sign In
         </Button>
       </Form>
