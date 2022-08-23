@@ -20,7 +20,8 @@ const LoginScreen = () => {
 
   // eslint-disable-next-line
   const [searchParams, setSearchParams] = useSearchParams()
-  const redirect = searchParams.toString() ? searchParams.toString().split('=')[1] : '/'
+  // const redirect = searchParams.toString() ? searchParams.toString().split('=')[1] : '/'
+  const redirect = searchParams.toString() ? searchParams.toString().split('=')[1] : ''
 
   useEffect(() => {
     if (userInfo) {
