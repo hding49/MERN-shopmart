@@ -1,6 +1,9 @@
 {
   "name": "shopmart",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.14.2"
+  },
   "description": "shopping cart application",
   "main": "server.js",
   "type": "module",
